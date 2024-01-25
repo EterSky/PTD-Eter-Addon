@@ -1,0 +1,109 @@
+	<object id="SM64BlueCoin">
+        	<name>Blue Coin (SM64 Style)</name>
+        	<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0"/>
+        	<category id="1208" />
+        	<preferredfile name="Obj" />
+        	<notes>A blue coin that gives you 5 coins and fully heals the player when collected.</notes>
+        	<files>/ObjectData/SM64BlueCoin.arc</files>
+        	<sounds></sounds>
+		<field id="0" type="bool" name="Inside Bubble?" values="" notes="If true, the Blue Coin will be placed inside an Air Bubble." />
+    		<field id="1" type="bool" name="Connect to moving objects?" values="Default is false." notes="Blue Coin clipping may break with this option." />
+	</object>
+
+    	<object id="RemoveMorphArea">
+        	<name>Remove Power-Up Area</name>
+        	<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0"/>
+        	<category id="1208" />
+        	<preferredfile name="AreaObj" />
+        	<notes>!!! DOESNT EXIST !!!
+A better version of MorphPlayerLimitArea that removes your power-up when you enter the area.</notes>
+        	<files></files>
+        	<sounds></sounds>
+    	</object>
+
+	<object id="ScenarioCompleteSwitchCtrl">
+		<name>Completed Scenario Controller</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="4" fieldReqs="0"/>
+		<category id="1208" />
+		<preferredfile name="Obj" />
+		<notes>!!! DOESNT EXIST !!!
+Activates its SW_A when the specified Power Star is completed</notes>
+		<files></files>
+		<sounds></sounds>
+		<field id="0" type="int" name="Power Star ID" values="" notes="" />
+	</object>
+
+	<object id="MorphSwitchCtrl">
+		<name>Power-Up Switch</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="4" fieldReqs="0"/>
+		<category id="1208" />
+		<preferredfile name="Obj" />
+		<notes>Activates its SW_A when the specified Power Star is completed.
+Use SW_B to deactivate the object.</notes>
+		<files></files>
+		<sounds></sounds>
+		<field id="0" type="int" name="Power-Up" values="" notes="0 = Bee Mario, 1 = Boo Mario, 2 = Cloud Mario, 3 = Flying Mario, 4 = Fire Mario, 5 = Ice Mario, 6 = Rainbow Mario, 7 = Rock Mario, 8 = Spring Mario, 9 = Yoshi"/>
+		<field id="1" type="bool" name="Stay activated ?" values="" notes="Set to 0 to turn off SW_A after exiting a power-up"/>
+		<field id="2" type="bool" name="Switch during action ?" values="" notes="Set to 0 to check for a specific action (NOT IMPLEMENTED YET)"/>
+	</object>
+
+	<object id="BenefitItemMoon">
+		<name>3-Up Moon</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="1" fieldReqs="0"/>
+		<category id="1208" />
+		<preferredfile name="Obj" />
+		<notes>A 3-Up Moon</notes>
+		<files>/ObjectData/BenefitItemMoon.arc</files>
+		<sounds></sounds>
+	</object>
+
+	<object id="BenefitItemCake">
+		<name>99-Up Cake</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="1" fieldReqs="0"/>
+		<category id="1208" />
+		<preferredfile name="Obj" />
+		<notes>A 99-Up Cake. Works best at 0.1 scale.
+Kind of a joke object.</notes>
+		<files>/ObjectData/BenefitItemCake.arc</files>
+		<sounds></sounds>
+	</object>
+
+	<object id="RemoteMorphRemover">
+		<name>Remote Morph Remover</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="8" fieldReqs="0"/>
+		<category id="1208" />
+		<preferredfile name="Obj" />
+		<notes>!!! DOESNT EXIST !!!
+Removes Mario's current Power-Up or a specified Power-Up.
+Use SW_B.</notes>
+		<files></files>
+		<sounds></sounds>
+		<field id="0" type="int" name="Power-Up" values="" notes="0 = Bee Mario, 1 = Boo Mario, 2 = Cloud Mario, 3 = Flying Mario, 4 = Fire Mario, 5 = Ice Mario, 6 = Rainbow Mario, 7 = Rock Mario, 8 = Spring Mario, 9 = Yoshi"/>
+	</object>
+
+	<object id="MorphChangeArea">
+		<name>Morph-Changing Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0"/>
+		<category id="1208" />
+		<preferredfile name="AreaObj" />
+		<notes>!!! DOESNT EXIST !!!
+Changes Mario to the specified power-up when the area is entered.</notes>
+		<files></files>
+		<sounds></sounds>
+		<field id="0" type="int" name="Power-Up" values="" notes="0 = Bee Mario, 1 = Boo Mario, 2 = Cloud Mario, 3 = Flying Mario, 4 = Fire Mario, 5 = Ice Mario, 6 = Rainbow Mario, 7 = Rock Mario, 8 = Spring Mario, 9 = Yoshi"/>
+	</object>
+
+	<object id="RemoteMorphChanger">
+		<name>Remote Morph Changer</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="8" fieldReqs="0"/>
+		<category id="1208" />
+		<preferredfile name="Obj" />
+		<notes>!!! DOESNT EXIST !!!
+Changes Mario to the specified power-up when SW_B is activated.</notes>
+		<files></files>
+		<sounds></sounds>
+		<field id="0" type="int" name="Power-Up" values="" notes="0 = Bee Mario, 1 = Boo Mario, 2 = Cloud Mario, 3 = Flying Mario, 4 = Fire Mario, 5 = Ice Mario, 6 = Rainbow Mario, 7 = Rock Mario, 8 = Spring Mario, 9 = Yoshi"/>
+	</object>
+	
+<!-- Add this in the Categories section -->
+<!-- <category id="1208">Eter's Custom Objects</category> -->
